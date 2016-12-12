@@ -1,0 +1,33 @@
+include ./../nav
+div.hero.my-work(style="background-image:url('./../images/my-work/lacy/grey-shirt.jpg')")
+	div.my-work-hero-center
+		img.logo.animated.fadeInUp(src="./../images/my-work/lacy/logo-white.svg")
+		h3 
+			span.black.animated.fadeInUp Try It Out!
+div.case-study
+	h3 Angular Shopping Application
+	hr
+	h6.tech-stack Angular 1, HTML5, CSS3, Javascript, Bootstrap 3, Node.js, Express, MongoDB, Instagram API
+	a.tech-stack(href="https://lacy-jewelry-co.herokuapp.com/" target="_blank") See it in action.
+	hr
+	p I love the challenge of learning new libraries and frameworks. Single page applications are very popular right now, so I decided to try my hand at it. 
+	div.challenge
+		h6 The Challenge
+		p To develop a lightweight Angular 1 shopping experience where users are able to browse and select products to add to their cart. A user should also be able to review the items that are currently in their cart as well as remove an item they have changed their mind about. 
+	div.solution 
+		h6 The Solution
+		p I developed a layout that guides the user through a seamless shopping experience. As this is a lifestyle brand I chose to incorporate hi-res photos of real people. Check it out <a href="https://lacy-jewelry-co.herokuapp.com/">here</a>
+	img.col-lg-12.shadow(src="./../images/my-work/lacy/home.png")
+div.result
+	h6 The Result
+	p The site is mobile responsive and easy to navigate due to a lightweight menu bar which helps guide users.
+
+	p Users are able to add items to their shopping cart as well as remove them. This particularly functionality is being handled through the utilization of local storage.
+
+	p Note: The instagram 'Recent Love' feed at the bottom of the home page is no longer diplaying images from the bangle tag as they have updated their Oauth requirements for use of their API endpoints. 
+div.case-study-more
+	img.shadow(src="./../images/my-work/lacy/shop.png")
+	img.shadow(src="./../images/my-work/lacy/shop-single.png")
+
+include ./../more-projects
+include ./../footer

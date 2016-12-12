@@ -1,0 +1,43 @@
+.more-projects {
+	@include container(12 nest);
+	padding: $container-pad-medium;
+	background-color: #e8e8e8;
+
+	@include breakpoint($medium) {
+		padding: $container-pad;
+	}
+
+	.more-projects-3 {
+		@include span(12);
+		text-align: center;
+
+		ul {
+			padding: 0;
+
+			li {
+				@include span(4);
+				display: inline;
+				
+				img {
+					@include span(12);
+				}
+			}
+
+		}
+
+		
+
+		.btn {
+			width: span(4);
+			text-align: center;
+			float: center;
+		    margin: 2.5rem auto 0 auto;
+		}
+
+		@include breakpoint($medium){
+			.btn{
+				width: span(12);
+			}
+		}
+	}
+}

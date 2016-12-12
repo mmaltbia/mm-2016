@@ -1,0 +1,54 @@
+doctype html
+html.no-js
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Michelle Maltbia
+
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Fjalla+One|Heebo:300,700')
+		//- link(rel="stylesheet", type="text/css", href="./../css/style.css")
+		link(rel='stylesheet', href='./../css/main.css')
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+		script(src='./../js/script.js')
+
+	body
+		nav(id="utility-nav")
+			ul(class="nav")
+				li
+					a(href="http://linkedin.com/in/michellemaltbia") 
+						img(src="./../images/linkedin.svg" width="22px")
+				li
+					a(href="http://twitter.com/michellemaltbia")
+						img(src="./../images/twitter.svg" width="22px")
+				li
+					a(href="mailto:hi@michellemaltbia.com?subject=Let's talk about your project.&body=Hi there! Thanks for reaching out. Let's start by you telling me about your project below, and I'll be in contact with next steps. Talk to you soon!" target="_blank") Start a Project 
+		nav(id="mobile-nav")
+			img(class="menu-bars collapse" src="./../images/mobile-menu.svg" width="100%")
+			ul(class="mobile-nav-ul")
+				li
+					a(href="/about.html") About
+					ul.nav-dropdown
+						li 
+							a(href="")
+				li
+					a(href="/my-work.html") My Work
+				li
+					a(href="/insight.html") Insight			
+		nav(id="main-nav")
+			div(class="brand")
+				a(href="/")
+					img(src="./../images/michelle-maltbia-logo.svg" height="35px")
+			ul(class="nav-li")
+				li
+					a(href="/about.html") About
+				li 
+					a(href="/my-work.html") My Work
+				li
+					a(href="/insight.html") Insight
+		

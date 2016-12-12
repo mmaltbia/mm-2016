@@ -1,0 +1,51 @@
+@import "variables";
+
+#insights-intro {
+	@include container(100%);
+	position: relative;
+	padding: $container-pad;
+	padding-right: 0;
+	padding-bottom: 0;
+	background: $primary;
+	margin-top: -1.3rem;
+	text-align:center;
+
+	p {
+		margin: 0 auto;
+		width: span(6);
+		padding-bottom: 3rem;
+
+		@include breakpoint($medium){
+			@include span(12 of 12);
+		}
+
+		@include breakpoint($small){
+			padding-bottom: 2rem;
+		}
+	}
+
+	@include breakpoint($medium){
+		padding-bottom: 1rem;
+
+		p {
+			padding-bottom: 1rem;
+		}
+	}
+
+	@include breakpoint($small){
+		padding: $container-pad;
+		padding-bottom: 4rem;
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		button {
+			width: 100%;
+			padding: 1rem 1rem;
+		}
+
+	}
+
+
+}

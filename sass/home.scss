@@ -1,0 +1,314 @@
+@import "variables";
+
+#intro {
+	@include container(100%);
+	position: relative;
+	padding: $container-pad;
+	padding-right: 0;
+	padding-bottom: 0;
+
+	p {
+		@include span(6 of 12);
+		padding-bottom: 3rem;
+
+		@include breakpoint($medium){
+			@include span(12 of 12);
+		}
+
+		@include breakpoint($small){
+			padding-bottom: 2rem;
+		}
+	}
+
+	a {
+		button {
+			float: left;
+		}
+	}
+
+
+	.img-bridge {
+		@include span(6 of 12);
+		position: absolute;
+		top: -21px;
+		right: 0px;
+		clear: both;
+		
+		@include breakpoint($small){
+			top: -0.80rem;
+		}
+	}
+
+	.img-desk {
+		@include span(6 of 12);
+		position: absolute;
+		right: 0rem;
+		bottom: 0px;
+		clear: both;
+		margin-right: 0;
+	}
+
+	@include breakpoint($medium){
+		padding-bottom: 1rem;
+
+		.img-desk {
+			@include span(8 of 12);
+		}
+
+		p {
+			padding-bottom: 1rem;
+		}
+	}
+
+	@include breakpoint($small){
+		padding: $container-pad;
+		padding-bottom: 4rem;
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		button {
+			width: 100%;
+			padding: 1rem 1rem;
+		}
+
+		.img-desk {
+			@include span(12 of 12);
+			padding-top: 2.5rem;
+		}
+	}
+
+
+}
+
+#my-work {
+	@include container();
+	background-size: cover;
+	min-height: 80rem;
+	color: #8c8c8c;
+	padding-bottom: 5rem;
+	position: relative;
+
+	#splatter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	img#drip{
+		position: absolute;
+		width: 3rem;
+		top: 0;
+		left: 1.5rem;
+		filter: FlipH;
+	}
+
+	h1 {
+		margin-top: 0;
+		padding-top: 5rem;
+		text-align: center;
+	}
+
+	span {
+		@include span(12 of 12);
+		text-align: center;
+	}
+
+	.gallery{
+
+		@include span(12 of 12);
+		padding: 10rem 0;
+
+		.my-work {
+			@include span(4 of 12);
+			position: absolute;
+			-webkit-transition: all .4s ease-in-out;
+			-moz-transition: all .4s ease-in-out;
+			-o-transition: all .4s ease-in-out;
+			-ms-transition: all .4s ease-in-out;
+
+			img {
+				width: 100%;
+				clear: both;
+			}
+		}
+
+		.my-work:hover {
+			@include span(6 of 12);
+			z-index: 999;
+			box-shadow: none;
+		}
+
+
+		:nth-child(1) {
+		  @include parallax(.4);
+		  width: span(12);
+		  top: 20px;
+		  left: 70px;
+		}
+		:nth-child(2) {
+		  @include parallax(.2);
+		  width: span(4 of 12);
+		  top: 35rem;
+		  right: 5rem;
+		}
+		:nth-child(3) {
+		  @include parallax(.3);
+		  width: span(4 of 12);
+		  top: 1.5rem;
+		  right: 1rem;
+		}
+		:nth-child(4) {
+		  @include parallax(.4);
+		  width: span(5 of 12);
+		  top: 25rem;
+		  right: 14.5rem;
+		  box-shadow: 45px 55px 47px #a0a0a0;
+
+		  @include breakpoint($small){
+		  	width: span(6);
+		  }
+		}
+		:nth-child(5) {
+		  @include parallax(.4);
+		  width: span(4 of 12);
+		  top: 13rem;
+		  right: 1rem;
+		}
+		:nth-child(6) {
+		  @include parallax(.4);
+		  width: span(4 of 12);
+		  top: 40rem;
+		  left: 18rem;
+		}
+		:nth-child(7) {
+		  @include parallax(.1);
+		  width: span(5 of 12);
+		  top: 70px;
+		  left: 70px;
+		}
+		:nth-child(8) {
+		  @include parallax(.1);
+		  @include span(4);
+		  top: 26rem;
+		  right: 15%;
+
+			// @include breakpoint(max-width 1115px){
+			//     top: 26rem;
+			//     left: 22rem;
+			// }		
+
+		}
+		:nth-child(9) {
+		  @include parallax(.4);
+		  top: 900px;
+		  left: 500px;
+		}
+		:nth-child(10) {
+		  @include parallax(-1);
+		  top: 1600px;
+		  left: 100px;
+		}
+		// padding: 10%;
+		// max-width: 40em;
+		// margin: auto;
+		> * {
+		  position: absolute;
+		}
+	}
+}
+
+#testimonials {
+	@include container();
+	position: relative;
+	padding-bottom: 5rem;
+
+	.quotation-mark {
+		position: absolute;
+	    top: -0.75rem;
+	    left: 3rem;
+	    width: 6rem;
+	}
+
+	@include breakpoint($small){
+		.quotation-mark {
+			top: -4rem;
+			left: 4.25rem;
+			width: span(2 of 12);
+		}
+	}
+	
+	
+	// Testimonial Rotator
+	.rotator {
+		width: span(8 of 12);
+		position: relative;
+		margin: 5rem auto;
+		padding-top: 11px;
+		padding-bottom: 13rem;
+		transition: all 2000ms 0s; 
+	}
+	.rotator-content {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		min-height: 180px;
+		top: 0;
+		z-index: 2;
+		display: none
+	}
+	.rotator .rotator-content.current {
+		display: block;
+	}
+	.rotator blockquote {
+		margin: 40px 0 0 0;
+		padding: 0;
+	}
+	.rotator blockquote p {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 1.5em;
+		color: #000;
+		font-weight: 300;
+		margin: 0.4em 0 1em;
+	}
+	.rotator blockquote footer {
+		font-size: 1.2em;
+	}
+		.rotator blockquote footer:before {
+		content: '― '
+	}
+	.rotator .rotator-content img {
+		@include span(2 of 12);
+		float: right;
+		margin: 50px 0 0 50px;
+		border-radius: 50%;
+		border: #fff 5px solid;
+		box-shadow: 5px 5px 12px #e8e8e8;
+	}
+	.rotator-progress {
+		position: absolute;
+		background: $btn-secondary;
+		height: 5px;
+		width: 0%;
+		z-index: 1000;
+	}
+}
+
+#project-in-mind {
+	@include container($susy);
+	padding: 8rem 0;
+	text-align: center;
+	background-size: cover;
+	margin: 0 auto;
+
+	button {
+		float: none;
+		margin-bottom: 0;
+	}
+ 	
+}

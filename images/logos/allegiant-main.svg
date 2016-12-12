@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="292.5px" height="244px" viewBox="0 0 292.5 244" enable-background="new 0 0 292.5 244" xml:space="preserve">
+<rect x="-7" y="-6" fill="#FFFFFF" width="305" height="255"/>
+<g>
+	<path fill="#D8D8D7" d="M63.771,149.447c1.358-2.023,9.791-13.504,23.367-9.78c15.128,4.154,25.956,5.656,33.223,6.076
+		c0.249-2.173,0.39-4.377,0.39-6.617c0-31.854-25.826-57.678-57.684-57.678c-31.853,0-57.678,25.825-57.678,57.678
+		c0,2.273,0.144,4.512,0.4,6.716c7.248-0.299,18.492-1.712,34.625-6.146C53.919,135.987,62.341,147.341,63.771,149.447z"/>
+	<g>
+		<g>
+			<g>
+				<polyline fill="#002556" points="63.08,138.422 63.023,124.488 99.071,102.621 				"/>
+				<polygon fill="#005486" points="99.071,102.621 76.814,138.279 63.08,138.422 				"/>
+			</g>
+			<g>
+				<polygon fill="#005486" points="62.14,137.105 62.989,123.146 28.131,103.297 				"/>
+				<polygon fill="#002556" points="28.131,103.297 48.393,137.746 62.14,137.105 				"/>
+			</g>
+			<g>
+				<polygon fill="#005486" points="63.011,137.116 74.786,126.506 62.857,73.91 				"/>
+				<polyline fill="#002556" points="62.857,73.91 51.559,126.506 63.011,137.116 				"/>
+			</g>
+			<g>
+				<polygon fill="#005486" points="63.774,137.256 51.559,126.482 0.569,137.406 				"/>
+				<polyline fill="#002556" points="0.569,137.406 51.559,147.732 63.774,137.256 				"/>
+			</g>
+			<g>
+				<polygon fill="#002556" points="62.823,137.27 75.041,126.492 126.027,137.416 				"/>
+				<polygon fill="#005486" points="126.027,137.416 75.041,147.739 62.823,137.27 				"/>
+			</g>
+			<polygon fill="#002556" points="63.091,149.851 77.848,149.851 62.964,137.116 			"/>
+			<polygon fill="#005486" points="62.964,137.116 49.074,149.851 63.091,149.851 			"/>
+		</g>
+		<g>
+			<path fill="#FFFFFF" d="M63.982,154.238h54.767c0.748-2.753,1.281-5.595,1.611-8.495c-7.267-0.42-18.095-1.922-33.223-6.076
+				c-13.576-3.724-22.008,7.757-23.367,9.78c-1.43-2.106-9.851-13.46-23.357-9.752c-16.133,4.435-27.376,5.848-34.625,6.146
+				c0.334,2.877,0.868,5.691,1.608,8.425h56.585V154.238z"/>
+			<path fill="#FDBC11" d="M63.982,154.238v0.028H7.397c0.451,1.657,0.969,3.284,1.557,4.878l108.274-0.123
+				c0.575-1.563,1.081-3.159,1.521-4.783H63.982z"/>
+		</g>
+		<g>
+			<rect x="141.462" y="135.335" fill="none" width="150.469" height="34.755"/>
+			
+				<text transform="matrix(1 0 0 1 182.3467 142.6348)" fill="#002556" font-family="'Raleway-Regular'" font-size="10.0001" letter-spacing="3">Academy</text>
+		</g>
+		<rect x="139.731" y="107.955" fill="none" width="151.672" height="26.641"/>
+		
+			<text transform="matrix(1 0 0 1 139.7305 124.209)" fill="#002556" font-family="'AbadiMT-CondensedExtraBold'" font-size="23.8684">Allegiant Prep</text>
+	</g>
+	<g>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="22.96" y1="97.611" x2="25.48" y2="100.265"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="103.568" y1="98.191" x2="101.004" y2="100.808"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="43.103" y1="84.467" x2="44.385" y2="88.155"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="9.554" y1="117.769" x2="13.162" y2="118.639"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="85.198" y1="84.77" x2="83.853" y2="88.438"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="116.814" y1="118.615" x2="113.192" y2="119.434"/>
+	</g>
+</g>
+</svg>

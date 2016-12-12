@@ -1,0 +1,178 @@
+@import "variables";
+
+.hero {
+	@include container();
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 30em;
+	position: relative;
+	z-index: -99;
+	transition: all 2000ms 0s; 
+
+	@include breakpoint($small){
+		min-height: 16em;
+	}
+
+	#js-rotating {
+		text-decoration: underline;
+	}
+
+	h3 {
+		width: span(6 of 12);
+		// margin-top: 6.5rem;
+		line-height: 3rem;
+		font-family: "Heebo", sans-serif;
+	}
+
+	@include breakpoint($medium){
+		h1 {
+			font-size: 24px;
+		}
+
+		h3 {
+			width: span(8);
+			font-size: 1rem;
+		}
+	}
+
+	@include breakpoint($small){
+
+		h1 {
+			width: span(12);
+			font-size: 18px;
+			padding-top: 9rem;
+		}
+
+		h3 {
+			width: span(12 of 12);
+			font-size: .85rem;
+			line-height: 2rem;
+			padding-bottom: 1rem;
+			padding-top: 0.25rem;
+		}
+		
+	}
+
+	.home {
+		width: span(12);
+		padding-top: 10rem;
+
+		h1 {
+			@include span(12 of 12 first);
+		}
+	}
+
+
+
+
+
+	// h3 {
+	// 	@include span(5 of 12 first);
+	// 	font-family: 'Heebo', sans-serif;
+	// 	position: absolute;
+	// 	top: 18rem;
+	// 	line-height: 3rem;
+	// }
+
+	.my-work-hero{
+		width: span(12);
+
+		.logo {
+			width: span(4);
+			margin: 0 auto;
+			background-color: #fff;
+			border-radius: 50%;
+
+			img {
+				top: 15rem;
+				width: 100%;
+			}
+		}
+			
+		h3 {
+			margin: 0 auto;
+		}
+	}
+
+	.my-work-hero-center {
+		width: span(12);
+		text-align: center;
+
+		h1 {
+			text-align: center;
+			margin: 0 auto;
+			padding-top: 14rem;
+		}
+
+		h3 {
+				width: 100%;
+				line-height: 3rem;
+			}
+
+		@include breakpoint($medium){
+			min-height: 25em;
+
+
+			.logo {
+				width: span(4);
+				margin-top: 4rem;
+
+				h1 {
+					text-align: center;
+					margin: 0 auto;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+
+			h3 {
+				@include span(12 of 12 first);
+				top: 14rem;
+				line-height: 3rem;
+			}
+
+		}
+
+		@include breakpoint($small){
+			min-height: 15em;
+
+
+			h1 {
+				width: span(12);
+				font-size: 24px;
+				padding-top: 9rem;
+			}
+
+			.logo {
+				width: span(8);
+				margin-top: 2rem;
+
+				img {
+					margin: 0 auto;
+				}
+			}
+
+			h3 {
+				width: span(12);
+				margin: 0 auto;
+				margin-top: 1rem;
+				line-height: 2rem;
+				font-size: .75rem;
+			}
+		}
+
+		.logo {
+			max-width: span(4);
+			margin: 0 auto;
+			margin-top: 14rem;
+
+			@include breakpoint($small) {
+				margin-top: 8rem;
+				max-width: span(8);
+			}
+		}
+	}
+}
+

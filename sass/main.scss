@@ -1,0 +1,231 @@
+@import "compass";
+@import "susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+	container-position: center,
+	gallery: 12,
+	debug: (
+	    image: hide,
+	    color: rgba(200,100,100,.3),
+	    output: background
+	    // toggle: top right
+	  )
+);
+
+// Import Partials
+@import "nav";
+@import "hero";
+@import "home";
+@import "about";
+@import "my-work";
+@import "more-projects";
+@import "insight";
+@import "footer";
+
+
+body {
+	@include container(100%);
+	perspective: none;
+	font-family: 'Heebo', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	backface-visibility: hidden;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 3rem;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+h3, h4, h5 {
+	font-weight: 300;
+}
+
+
+
+h6 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $sky-blue;
+}
+
+p {
+	margin: inherit 0;
+}
+
+.row {
+	@include span(12);
+}
+
+.center {
+	float:none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.full-width {
+	@include container(12);
+	background-size: cover;
+	min-height: 20em;
+}
+
+
+.col-xs-12 {
+	@include breakpoint($small){
+		@include span(12 of 12);
+	}
+	
+}
+
+.col-lg-6 {
+	@include span(6);
+
+	@include breakpoint($small){
+		@include span(12 of 12);
+	}
+}
+
+.col-lg-12 {
+	@include span(12);
+}
+
+.black { 
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	line-height: 1.4; 
+	padding: 0.45rem 0; 
+	width: 400px;
+	margin: 20px auto;
+}
+span.black{ 
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff; 
+  display: inline;
+  padding: 0.45rem 1rem;
+  
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  -mox-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+// .black, .black:after{
+//   background-color: rgba(0, 0, 0, 0.85);
+// }
+
+// .black  {
+// 	position: relative;
+// 	line-height: 1;
+// 	background-color: rgba(0, 0, 0, 0.85);
+// 	color: #fff;
+// 	padding: 0.5rem 1rem;
+// 	display: inline;
+// 	box-shadow: 10px 0 0 rgba(0, 0, 0, 0.85), -10px 0 0 rgba(0, 0, 0, 0.85);
+// 	// border: 0 solid #333;
+// 	// border-width: 0.25em 0; 0.25em is roughly equal to one space character.
+// }
+
+// .black:before {
+//   content: "";
+//   position: absolute;
+//   top: -0.25em;
+//   left: 0;
+//   bottom: -0.25em;
+//   width: 0.25em;
+// }
+
+// .black > span {
+//   position: relative;
+//   z-index: 1;
+  
+// }
+
+.btn {
+	clear: both;
+	padding: 1rem 2.5rem;
+	font-size: 1.25rem;
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 6rem;
+	border: none;
+	line-height: 1.5rem;
+	color: #fff;
+
+	@include breakpoint($medium){
+		@include span(12 of 12);
+	}
+}
+
+.btn-primary {
+	background: $btn-primary;
+}
+
+.btn-primary:hover {
+	background: #a5bc00;
+}
+
+.btn-secondary {
+	background: $btn-secondary;
+}
+
+.btn-secondary:hover {
+	background: #a80084;
+}
+
+.btn-tertiary {
+	background: $btn-tertiary;
+	color: #fff;
+	padding: 0.1rem 0.5rem;
+    text-decoration: none;
+}
+
+.btn-tertiary:hover {
+	background: #102351;
+}
+
+.btn-gray {
+	background: $gray;
+	color: #fff;
+}
+
+.btn-gray:hover {
+	background: #102351;
+}
+
+.col-1, .col-2 {
+	@include span(6);
+}
+
+@include breakpoint(max-width 1020px){
+	.col-1, .col-2 {
+		@include span(12);
+	}
+}
+
+.hr {
+	height: 1px;
+	background-color: #333;
+	width: 100%;
+	float: left;
+}
+
+.shadow {
+	box-shadow: 2px 2px 7px #b8b8b8;
+}
+
+.white {
+	color: #fff;
+}
+
+
+
+

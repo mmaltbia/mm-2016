@@ -1,0 +1,165 @@
+@import "variables";
+
+#meet-michelle {
+	@include container();
+	padding: $container-pad;
+	margin-top: -1.3rem;
+
+	#meet-michelle-text {
+		@include span(6 of 12);
+		padding-bottom: 5rem;
+	    padding-top: 5rem;
+
+
+		@include breakpoint($medium){
+			@include span(12 of 12);
+		}
+	}
+
+	#meet-michelle-imgs {
+		@include span (6 of 12);
+
+		@include breakpoint($medium){
+			@include span(12 of 12);
+		}
+	}
+}
+
+#skills {
+	@include container();
+	padding: $container-pad;
+	text-align: center;
+	background: #e8e8e8;
+    color: #333;
+	
+	#skills-intro {
+		@include span(12);
+
+		h3 {
+			@include span(6);
+			text-align: center;
+			margin: 0 auto;
+			float: none;
+		}
+
+	}
+    
+	
+	#skill-list-1, #skill-list-2, #skill-list-3 {
+		@include span(4 of 12);
+		padding: 0;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			background: #fff;
+			color: #000;
+			padding: 2px 5px;
+		}
+
+		@include breakpoint($medium){
+			@include span(12 of 12);
+		}
+
+		@include breakpoint($small){
+			@include span(12 of 12);
+		}
+	}
+
+
+}
+
+#values {
+	@include container();
+	text-align: center;
+	padding: $container-pad;
+	
+
+	#values-list {
+		@include container(12);
+
+		.value {
+			@include span(4 of 12);
+			margin-bottom: 3.5rem;
+			text-align: center;
+			
+			.icon{
+				width: span(12 of 12);
+				text-align: center;
+
+				img {
+					width: 25%;
+				}
+			}
+			
+			@include breakpoint($medium){
+				@include span(6 of 12);
+			}
+			@include breakpoint($small){
+				@include span(12 of 12);
+			}
+		}
+
+	}
+}
+
+#giving-back-mm {
+	@include container();
+	padding: $container-pad-medium;
+	background: $primary;
+
+	#giving-back {
+		@include span(12 nest);
+
+		#giving-back-img {
+			@include span(4 of 12 first);
+
+			img {
+				width: 100%;
+			}
+		}
+
+		#giving-back-content {
+			@include span(7 of 12 last);
+		}
+	}
+
+	@include breakpoint($medium){
+		padding: $container-pad;
+
+		#giving-back {
+
+			#giving-back-img {
+				@include span(12 of 12);
+				padding-top: 4rem;
+
+				img {
+					@include span(12 of 12);
+				}
+			}
+
+			#giving-back-content {
+				@include span(12 of 12);
+			}
+		}
+	}
+}
+
+#ready-to-work {
+	@include container();
+	padding: $container-pad;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	
+	.center{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	btn {
+		@include span(12);
+		text-align: center;
+		float: center;
+	}
+}
